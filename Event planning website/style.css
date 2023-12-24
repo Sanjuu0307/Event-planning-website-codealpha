@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    background: linear-gradient(135deg, rgb(49, 69, 73), #0930c0);
+    padding: 20px;
+    border-radius: 10px;
+    color: #010909;
+}
+.event-planning{
+    width: 100%;
+    max-width: 480px;
+    background: #435151;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.event-planning h2 {
+    color: #101213;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f6;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    background-color: #150503;
+    color: #e4def1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+li.checked {
+    color: #6b0707;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    background-image: url(checked.png);
+}
+
+li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+li span:hover {
+    background: #1f3052;
+}

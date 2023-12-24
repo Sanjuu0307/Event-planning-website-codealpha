@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event planning app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>EVENT PLANNING WEBSITE</h2>
+        <div class="event-planning">
+            <div class="row">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" required>
+
+                <input type="text" id="input-box" placeholder="Create event">
+                <button onclick="addTask()">Add</button>
+        
+            </div>
+            <h2>Events list:</h2>
+            <ul id="list-container">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
